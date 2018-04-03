@@ -1,5 +1,3 @@
-# Python for Biomolecular Modellers
-
 ## Aimed at: 
 Anyone interested in using Python for Biomodelling. The material in 
 this workshop will help you get the most out of the other workshops 
