@@ -1,4 +1,5 @@
 class Morse:
+    """Class that can encode and decode messages to/from Morse code"""
     def __init__(self):
         self._letter_to_morse = {'a':'.-', 'b':'-...', 'c':'-.-.', 'd':'-..', 'e':'.', 'f':'..-.',
                    'g':'--.', 'h':'....', 'i':'..', 'j':'.---', 'k':'-.-', 'l':'.-..', 'm':'--',
@@ -13,12 +14,15 @@ class Morse:
             self._morse_to_letter[ self._letter_to_morse[letter] ] = letter
         
     def encode(self, message):
+        """Encode the passed message into Morse code. Returns a list of Morse 
+           code letters"""
         morse = []
         for letter in message:
             morse.append( self._letter_to_morse[letter.lower()] )
         return morse
     
     def decode(self, morse):
+        """Decodes a passed list of Morse code letters and returns the decoded string"""
         message = []
         for code in morse:
             message.append( self._morse_to_letter[code] )

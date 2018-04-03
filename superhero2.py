@@ -72,20 +72,20 @@ def battle(superhero, supervillain):
         # Draw, so no-one won!
         return "No-one, because %s" % e
 
-superman = Superhero(name="Superman", weakness="kryptonite")
+if __name__ == "__main__":
+    superman = Superhero(name="Superman", weakness="kryptonite")
 
-print("Is it a bird? Is it a plane? No, it's %s!!!" % superman.getName())
+    print("Is it a bird? Is it a plane? No, it's %s!!!" % superman.getName())
 
-lex = Supervillain(name="Lex Luther")
+    lex = Supervillain(name="Lex Luther")
 
-print("%s will battle %s. The winner is %s" \
-  % (superman.getName(), lex.getName(), \
-     battle(superman, lex) ) )
+    print("%s will battle %s. The winner is %s" \
+       % (superman.getName(), lex.getName(), \
+          battle(superman, lex) ) )
 
-print("Lex steals some krytonite...")
-lex.steal("kryptonite")
+    print("Lex steals some krytonite...")
+    lex.steal("kryptonite")
 
-print("They battle again... The winner is %s" \
-   % battle(superman, lex))
-
+    print("They battle again... The winner is %s" \
+        % battle(superman, lex))
 
