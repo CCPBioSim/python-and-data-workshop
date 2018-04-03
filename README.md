@@ -53,13 +53,13 @@ This will download the image (may take a while...) and will run it on
 your computer. It will print out the URL of the notebook which you should navigate
 to in your browser (it will look something like `http://localhost:8888/?token=7f4b6be12ff1cec13903d0f27bab2ad7ea3eeaa9f0098dee`)
 
-### [01_jupyter.ipynb](01_jupyter.ipynb) ([answers](answers/01_jupyter.ipynb))
+### [01_jupyter_howto.ipynb](01_jupyter_howto.ipynb) ([answers](answers/01_jupyter_howto.ipynb))
 
 Introduction to Jupyter notebooks, including how to use the interface,
 how to view molecules, draw graphs, download files, and start a bash
 terminal.
 
-[html](html/01_jupyter.html) | [answers](html/answers/01_jupyter.ipynb)
+[html](html/01_jupyter_howto.html) | [answers](html/answers/01_jupyter_howto.ipynb)
 
 ### [01_jupyter.ipynb](01_jupyter.ipynb) ([answers](answers/01_jupyter.ipynb))
 
