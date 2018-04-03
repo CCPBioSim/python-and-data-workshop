@@ -1,4 +1,4 @@
-# Python for Biomolecular Modellers, Parts 1 and 2
+# Python for Biomolecular Modellers
 
 ## Aimed at: 
 Anyone interested in using Python for Biomodelling. The material in 
@@ -6,7 +6,7 @@ this workshop will help you get the most out of the other workshops
 run during the week.
 
 ## Requirements: 
-Basic knowledge of Python e.g. as in https://chryswoods.com/beginning_python
+Basic knowledge of Python e.g. as in [https://chryswoods.com/beginning_python](https://chryswoods.com/beginning_python)
 
 ## Abstract: 
 This workshop will introduce more intermediate features of Python that 
@@ -19,10 +19,10 @@ NumPy and MatplotLib.
 ## Training Material
 
 The workshop consists of a series of Jupyter notebooks. These are available
-below, and can be run using the 
-[workshop jupyter server](https://workshop.biosimspace.org/hub/tmplogin).
+below, and can be run using the
+<a href="https://workshop.biosimspace.org/hub/tmplogin" target="_blank">workshop Jupyter server</a>.
 
-Start the server by [clicking here](https://workshop.biosimspace.org/hub/tmplogin).
+Start the server by <a href="https://workshop.biosimspace.org/hub/tmplogin" target="_blank">clicking here</a>.
 This will open a Jupyter notebook interface. Be patient as this may take 30-60 seconds.
 Once this has opened, navigate to the `python_and_data` directory and you will find the
 notebooks there.
