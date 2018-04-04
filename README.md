@@ -18,12 +18,7 @@ NumPy and MatplotLib.
 
 The workshop consists of a series of Jupyter notebooks. These are available
 below, and can be run using the
-<a href="https://workshop.biosimspace.org/hub/tmplogin" target="_blank">workshop Jupyter server</a>.
-
-Start the server by <a href="https://workshop.biosimspace.org/hub/tmplogin" target="_blank">clicking here</a>.
-This will open a Jupyter notebook interface. Be patient as this may take 30-60 seconds.
-Once this has opened, navigate to the `python_and_data` directory and you will find the
-notebooks there.
+<a href="https://ccpbiosim.github.io/workshop/events/bristol2018/server.html" target="_blank">workshop Jupyter server</a>.
 
 The workshops are numbered sequentially from `01_jupyter_howto.ipynb` to
 `17_regular_expressions.ipynb`. They cover a variety of useful Python topics,
@@ -141,20 +136,3 @@ Something
 Something
 
 [download](17_regular_expressions.ipynb) | [download answers](answers/17_regular_expressions.ipynb)
-
-## How to download to run at home
-
-While this workshop is running using cloud servers generously supplied
-by [Microsoft Azure](https://azure.microsoft.com/en-us/services/container-service/kubernetes/),
-you can also download and run this workshop on your own computer if
-you are using docker (and your computer has an X86-64 processor that
-supports AVX, e.g. like most Intel processors since 2011). To run on
-your own computer type;
-
-```
-docker run -it --rm -p 8888:8888 chryswoods/bss-workshop:latest
-```
-
-This will download the image (may take a while...) and will run it on
-your computer. It will print out the URL of the notebook which you should navigate
-to in your browser (it will look something like `http://localhost:8888/?token=7f4b6be12ff1cec13903d0f27bab2ad7ea3eeaa9f0098dee`)
