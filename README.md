@@ -20,6 +20,9 @@ The workshop consists of a series of Jupyter notebooks. These are available
 below, and can be run using the
 <a href="https://ccpbiosim.github.io/workshop/events/bristol2018/server.html" target="_blank">workshop Jupyter server</a>.
 
+Once you have started the server, navigate to the `python_and_data` directory
+and you will find all workshop material there.
+
 The workshops are numbered sequentially from `01_jupyter_howto.ipynb` to
 `17_regular_expressions.ipynb`. They cover a variety of useful Python topics,
 and are *mostly* independent. Feel free to go through them in the order you
