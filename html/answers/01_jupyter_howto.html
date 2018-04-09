@@ -11726,9 +11726,7 @@ body {
 div#notebook {
   overflow: visible;
   border-top: none;
-}
-
-@media print {
+}@media print {
   div.cell {
     display: block;
     page-break-inside: avoid;
@@ -11749,7 +11747,7 @@ div#notebook {
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -11773,8 +11771,7 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11785,7 +11782,7 @@ div#notebook {
 <li>An interactive bash terminal (we will use this later)</li>
 </ul>
 <p>What is an interactive Python notebook? It is a notebook that mixes documentation (like this!) with Python code (like below), with the output of that code.</p>
-<p>For example, below is the Python code to print "Hello World". Click on the below code and then press "SHIFT+Return". You should see that the code is run, and below "Hello World" will be printed.</p>
+<p>For example, the cell below contains the Python code to print "Hello World". Click on the below code and then press "CTRL+Return". You should see that the code is run, and below "Hello World" will be printed.</p>
 
 </div>
 </div>
@@ -11807,7 +11804,9 @@ div#notebook {
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Hello World
@@ -11819,13 +11818,12 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The above code is interactive because it runs when you pressed "SHIFT+Return". It is also interactive because you can change it. For example, click again on the code and change "Hello World" to "Hello Jupyter". Press "SHIFT+Return" again and you should see "Hello Jupyter" printed.</p>
-<p>A code cell can have as much or little Python in it as you want. The below cell defines a function and then runs it in a loop. What do you think will be printed out when you select it and press "SHIFT+Return"? Have a go. Are you right?</p>
+<p>The above code is interactive because it runs when you pressed "CTRL+Return". It is also interactive because you can change it. For example, click again on the code and change "Hello World" to "Hello Jupyter". Press "CTRL+Return" again and you should see "Hello Jupyter" printed.</p>
+<p>Pressing "CTRL+Return" repeatedly allows you to re-run the contents of a cell many times. Try repeatedly running the cell below.</p>
 
 </div>
 </div>
@@ -11833,6 +11831,48 @@ div#notebook {
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">random</span> <span class="k">import</span> <span class="n">randint</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>5
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>A code cell can have as much or little Python in it as you want. The below cell defines a function and then runs it in a loop. What do you think will be printed out when you select it and press "CTRL+Return"? Have a go. Are you right?</p>
+<p>Try pressing "SHIFT+Return". This time, as well as the cell being executed, the focus moved to the cell below. By continually pressing "SHIFT+Return" you can navigate through a notebook cell-by-cell.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">countDown</span><span class="p">(</span><span class="n">start</span><span class="p">):</span>
@@ -11852,7 +11892,9 @@ div#notebook {
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>10...
@@ -11874,8 +11916,7 @@ Lift off!
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11886,10 +11927,10 @@ Lift off!
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">21</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
 </pre></div>
 
 </div>
@@ -11899,7 +11940,7 @@ Lift off!
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">countDown</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
@@ -11914,26 +11955,12 @@ Lift off!
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
 
+
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>21...
-20...
-19...
-18...
-17...
-16...
-15...
-14...
-13...
-12...
-11...
-10...
-9...
-8...
-7...
-6...
-5...
+<pre>5...
 4...
 3...
 2...
@@ -11947,8 +11974,7 @@ Lift off!
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11963,8 +11989,7 @@ Lift off!
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11976,7 +12001,7 @@ Lift off!
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">BioSimSpace</span> <span class="k">import</span> <span class="n">viewMolecules</span>
@@ -11992,7 +12017,9 @@ Lift off!
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Reading molecules from &#39;[&#39;data/complex.pdb&#39;]&#39;
@@ -12002,40 +12029,44 @@ Rendering the molecules...
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
 
 
 
 
+
  
  
-<div id="337b2c70-7d80-46e5-9a7f-347837842380"></div>
+<div id="be58bdc0-1376-47aa-bd89-92defccf1025"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#337b2c70-7d80-46e5-9a7f-347837842380');
+var element = $('#be58bdc0-1376-47aa-bd89-92defccf1025');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "7fe11cc237114eadb39b84e672bddf3d"}
+{"model_id": "904bdd0e82f340cf91e31996864cae0a", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
 
 
 
 
+
  
  
-<div id="63f5c98e-1d1d-42aa-bd5f-651908a1912b"></div>
+<div id="d50ca0be-007e-4fdf-b848-6d917418f424"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#63f5c98e-1d1d-42aa-bd5f-651908a1912b');
+var element = $('#d50ca0be-007e-4fdf-b848-6d917418f424');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "de114cb2c0664de99016dfb85a2f452c"}
+{"model_id": "58130e6132cb464c86c722052ed163e0", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -12045,13 +12076,12 @@ var element = $('#63f5c98e-1d1d-42aa-bd5f-651908a1912b');
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>You can rotate and interact with molecules once they have loaded (the "[*]" next to a cell indicates that it is processing. It will turn into a number once processing is complete)</p>
-<p>You can change molecular representations and interact with the 3D molecule view. Later on we will go through some examples showing what you can do and how you can select parts of the molecule.</p>
+<p>You can change molecular representations and interact with the 3D molecule view. <a href="16_viewing_molecules.ipynb">Later on</a> we will go through some examples showing what you can do and how you can select parts of the molecule (or <a href="16_viewing_molecules.ipynb">click here</a> if you want to jump ahead and learn now).</p>
 <p>In addition to viewing molecules, you can also draw graphs. This is achieved using a combination of the <a href="https://matplotlib.org">matplotlib</a>, <a href="http://www.numpy.org">numpy</a> and <a href="https://pandas.pydata.org">pandas</a> modules. For example, the below code draws a sine and cosine curve.</p>
 
 </div>
@@ -12059,7 +12089,7 @@ var element = $('#63f5c98e-1d1d-42aa-bd5f-651908a1912b');
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># First, import pandas, numpy and matplotlib</span>
@@ -12086,18 +12116,22 @@ var element = $('#63f5c98e-1d1d-42aa-bd5f-651908a1912b');
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[14]:</div>
+
+<div class="prompt output_prompt">Out[7]:</div>
+
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f07313ecac8&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f8944fb4400&gt;</pre>
 </div>
 
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 <div class="output_svg output_subarea ">
@@ -12105,7 +12139,7 @@ var element = $('#63f5c98e-1d1d-42aa-bd5f-651908a1912b');
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Created with matplotlib (http://matplotlib.org/) -->
-<svg height="255pt" version="1.1" viewBox="0 0 393 255" width="393pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg height="255.889375pt" version="1.1" viewBox="0 0 393.695938 255.889375" width="393.695938pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
  <defs>
   <style type="text/css">
 *{stroke-linecap:butt;stroke-linejoin:round;}
@@ -12135,10 +12169,10 @@ z
       <defs>
        <path d="M 0 0 
 L 0 3.5 
-" id="m46d7f69e4d" style="stroke:#000000;stroke-width:0.8;"/>
+" id="mc738db6892" style="stroke:#000000;stroke-width:0.8;"/>
       </defs>
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="70.273006" xlink:href="#m46d7f69e4d" y="228.14"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="70.273006" xlink:href="#mc738db6892" y="228.14"/>
       </g>
      </g>
      <g id="text_1">
@@ -12192,7 +12226,7 @@ z
     <g id="xtick_2">
      <g id="line2d_2">
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="118.713983" xlink:href="#m46d7f69e4d" y="228.14"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="118.713983" xlink:href="#mc738db6892" y="228.14"/>
       </g>
      </g>
      <g id="text_2">
@@ -12232,7 +12266,7 @@ z
     <g id="xtick_3">
      <g id="line2d_3">
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="167.15496" xlink:href="#m46d7f69e4d" y="228.14"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="167.15496" xlink:href="#mc738db6892" y="228.14"/>
       </g>
      </g>
      <g id="text_3">
@@ -12261,7 +12295,7 @@ z
     <g id="xtick_4">
      <g id="line2d_4">
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="215.595938" xlink:href="#m46d7f69e4d" y="228.14"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="215.595938" xlink:href="#mc738db6892" y="228.14"/>
       </g>
      </g>
      <g id="text_4">
@@ -12297,7 +12331,7 @@ z
     <g id="xtick_5">
      <g id="line2d_5">
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="264.036915" xlink:href="#m46d7f69e4d" y="228.14"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="264.036915" xlink:href="#mc738db6892" y="228.14"/>
       </g>
      </g>
      <g id="text_5">
@@ -12310,7 +12344,7 @@ z
     <g id="xtick_6">
      <g id="line2d_6">
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="312.477892" xlink:href="#m46d7f69e4d" y="228.14"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="312.477892" xlink:href="#mc738db6892" y="228.14"/>
       </g>
      </g>
      <g id="text_6">
@@ -12323,7 +12357,7 @@ z
     <g id="xtick_7">
      <g id="line2d_7">
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="360.918869" xlink:href="#m46d7f69e4d" y="228.14"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="360.918869" xlink:href="#mc738db6892" y="228.14"/>
       </g>
      </g>
      <g id="text_7">
@@ -12340,10 +12374,10 @@ z
       <defs>
        <path d="M 0 0 
 L -3.5 0 
-" id="mb36709f698" style="stroke:#000000;stroke-width:0.8;"/>
+" id="ma5bbd014b9" style="stroke:#000000;stroke-width:0.8;"/>
       </defs>
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="48.195938" xlink:href="#mb36709f698" y="218.256364"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="48.195938" xlink:href="#ma5bbd014b9" y="218.256364"/>
       </g>
      </g>
      <g id="text_8">
@@ -12367,7 +12401,7 @@ z
     <g id="ytick_2">
      <g id="line2d_9">
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="48.195938" xlink:href="#mb36709f698" y="168.837713"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="48.195938" xlink:href="#ma5bbd014b9" y="168.837713"/>
       </g>
      </g>
      <g id="text_9">
@@ -12409,7 +12443,7 @@ z
     <g id="ytick_3">
      <g id="line2d_10">
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="48.195938" xlink:href="#mb36709f698" y="119.419062"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="48.195938" xlink:href="#ma5bbd014b9" y="119.419062"/>
       </g>
      </g>
      <g id="text_10">
@@ -12424,7 +12458,7 @@ z
     <g id="ytick_4">
      <g id="line2d_11">
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="48.195938" xlink:href="#mb36709f698" y="70.000412"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="48.195938" xlink:href="#ma5bbd014b9" y="70.000412"/>
       </g>
      </g>
      <g id="text_11">
@@ -12439,7 +12473,7 @@ z
     <g id="ytick_5">
      <g id="line2d_12">
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="48.195938" xlink:href="#mb36709f698" y="20.581761"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="48.195938" xlink:href="#ma5bbd014b9" y="20.581761"/>
       </g>
      </g>
      <g id="text_12">
@@ -12453,7 +12487,7 @@ z
     </g>
    </g>
    <g id="line2d_13">
-    <path clip-path="url(#p1487ba8e57)" d="M 63.414119 218.256364 
+    <path clip-path="url(#p4d4421320b)" d="M 63.414119 218.256364 
 L 65.801285 218.136374 
 L 68.188451 217.776698 
 L 70.575617 217.178208 
@@ -12538,7 +12572,7 @@ L 367.777756 218.256364
 " style="fill:none;stroke:#1f77b4;stroke-linecap:square;stroke-width:1.5;"/>
    </g>
    <g id="line2d_14">
-    <path clip-path="url(#p1487ba8e57)" d="M 63.414119 119.419062 
+    <path clip-path="url(#p4d4421320b)" d="M 63.414119 119.419062 
 L 75.349948 143.526836 
 L 81.317863 155.123214 
 L 86.092194 164.018807 
@@ -12798,7 +12832,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p1487ba8e57">
+  <clipPath id="p4d4421320b">
    <rect height="217.44" width="334.8" x="48.195938" y="10.7"/>
   </clipPath>
  </defs>
@@ -12812,18 +12846,16 @@ z
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Later on we will go through pandas, matplotlib and numpy and you will learn how to draw lots of different and interesting graphs.</p>
+<p>Later on we will go through <a href="12_pandas.ipynb">pandas</a>, <a href="15_matplotlib.ipynb">matplotlib</a> and <a href="13_basic_numpy.ipynb">numpy</a> and you will learn how to draw lots of different and interesting graphs (or click the links to jump ahead and learn now).</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12836,8 +12868,7 @@ z
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12854,51 +12885,7 @@ z
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">b</span> <span class="o">=</span> <span class="mi">32</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The answer to life, the universe and everything is </span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="p">))</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt"></div>
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>The answer to life, the universe and everything is 42
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12910,7 +12897,7 @@ z
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">sleep</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
@@ -12923,8 +12910,7 @@ z
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12935,7 +12921,7 @@ z
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">sleep</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
@@ -12948,7 +12934,7 @@ z
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">sleep</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
@@ -12961,7 +12947,7 @@ z
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">sleep</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
@@ -12972,8 +12958,7 @@ z
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12988,21 +12973,7 @@ z
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13013,7 +12984,7 @@ z
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span> ls
@@ -13028,17 +12999,21 @@ z
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
 
+
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>01_jupyter_howto.ipynb	      09_exceptions.ipynb	    data
-02_lists.ipynb		      10_error_handling.ipynb	    images
-03_dictionaries.ipynb	      11_modules.ipynb		    morse.py
-04_functions.ipynb	      12_pandas.ipynb		    __pycache__
-05_objects.ipynb	      13_basic_numpy.ipynb	    superhero2.py
-06_classes.ipynb	      14_more_numpy.ipynb	    superhero.py
-07_documentation.ipynb	      15_matplotlib.ipynb
-08_class_documentation.ipynb  17_regular_expressions.ipynb
+<pre>01_jupyter_howto.ipynb	      11_modules.ipynb		    data
+02_lists.ipynb		      12_pandas.ipynb		    html
+03_dictionaries.ipynb	      13_basic_numpy.ipynb	    images
+04_functions.ipynb	      14_more_numpy.ipynb	    LICENSE
+05_objects.ipynb	      15_matplotlib.ipynb	    README.md
+06_classes.ipynb	      16_viewing_molecules.ipynb    superhero2.py
+07_documentation.ipynb	      17_regular_expressions.ipynb  superhero.py
+08_class_documentation.ipynb  answers			    tmp.ipynb
+09_exceptions.ipynb	      AUTHORS
+10_error_handling.ipynb       _config.yml
 </pre>
 </div>
 </div>
@@ -13047,8 +13022,7 @@ z
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13059,7 +13033,7 @@ z
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span> cat LICENSE
@@ -13074,7 +13048,9 @@ z
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>MIT License
@@ -13106,8 +13082,7 @@ SOFTWARE.
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13118,7 +13093,7 @@ SOFTWARE.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span> cp data/dioxin.pdb ./
@@ -13131,7 +13106,7 @@ SOFTWARE.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">BioSimSpace</span> <span class="k">import</span> <span class="n">viewMolecules</span>  <span class="c1"># importing again in case we restarted the kernel</span>
@@ -13147,7 +13122,9 @@ SOFTWARE.
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Reading molecules from &#39;[&#39;dioxin.pdb&#39;]&#39;
@@ -13157,52 +13134,58 @@ Rendering the molecules...
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
 
 
 
 
+
  
  
-<div id="a998f600-a571-46e7-af73-b404a1d97359"></div>
+<div id="54c5d586-02b2-4ab8-a198-659fdd7ce3c3"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#a998f600-a571-46e7-af73-b404a1d97359');
+var element = $('#54c5d586-02b2-4ab8-a198-659fdd7ce3c3');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "6f4988dd79c04f4aace8a49516e4f333"}
+{"model_id": "99f595b9e6ad433a8be815af1cff7a6c", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
 
 
 
 
+
  
  
-<div id="991bb9f0-1650-44fe-9ac9-cbf3877a11f1"></div>
+<div id="aeb132ae-b78b-45ce-9786-c21934af2424"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#991bb9f0-1650-44fe-9ac9-cbf3877a11f1');
+var element = $('#aeb132ae-b78b-45ce-9786-c21934af2424');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "45a61f22196c4fbcadaca31f50b04243"}
+{"model_id": "23d41ec035dc40fcbc7413c12f08ad8b", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
 </div>
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[25]:</div>
+
+<div class="prompt output_prompt">Out[15]:</div>
+
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;BioSimSpace.Notebook.view.View at 0x7f07313dfd68&gt;</pre>
+<pre>&lt;BioSimSpace.Notebook.view.View at 0x7f8945012898&gt;</pre>
 </div>
 
 </div>
@@ -13211,8 +13194,7 @@ var element = $('#991bb9f0-1650-44fe-9ac9-cbf3877a11f1');
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13227,21 +13209,7 @@ var element = $('#991bb9f0-1650-44fe-9ac9-cbf3877a11f1');
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13263,8 +13231,7 @@ var element = $('#991bb9f0-1650-44fe-9ac9-cbf3877a11f1');
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13289,19 +13256,6 @@ var element = $('#991bb9f0-1650-44fe-9ac9-cbf3877a11f1');
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-</div>
-</div>
-</div>
-
 </div>
     </div>
   </div>
