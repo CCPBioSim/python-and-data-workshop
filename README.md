@@ -18,7 +18,7 @@ NumPy and MatplotLib.
 
 The workshop consists of a series of Jupyter notebooks. These are available
 below, and can be run using the
-<a href="https://ccpbiosim.github.io/workshop/events/bristol2018/server.html" target="_blank">workshop Jupyter server</a>.
+<a href="https://ccpbiosim.github.io/workshop/events/leeds2019/server.html" target="_blank">workshop Jupyter server</a>.
 
 Once you have started the server, navigate to the `python_and_data` directory
 and you will find all workshop material there.
