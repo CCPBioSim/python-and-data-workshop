@@ -1,24 +1,24 @@
-## Aimed at: 
-Anyone interested in using Python for Biomodelling. The material in 
-this workshop will help you get the most out of the other workshops 
+## Aimed at:
+Anyone interested in using Python for Biomodelling. The material in
+this workshop will help you get the most out of the other workshops
 run during the week.
 
-## Requirements: 
+## Requirements:
 Basic knowledge of Python e.g. as in [https://chryswoods.com/beginning_python](https://chryswoods.com/beginning_python)
 
-## Abstract: 
-This workshop will introduce more intermediate features of Python that 
-are useful for biomolecular modellers. This will include the use of 
-Jupyter notebooks, how to write Python functions and classes, and 
+## Abstract:
+This workshop will introduce more intermediate features of Python that
+are useful for biomolecular modellers. This will include the use of
+Jupyter notebooks, how to write Python functions and classes, and
 how to properly structure, document and test code. The second
-part will introduce you to data analysis tools such as Pandas, 
+part will introduce you to data analysis tools such as Pandas,
 NumPy and MatplotLib.
 
 ## Training Material
 
 The workshop consists of a series of Jupyter notebooks. These are available
 below, and can be run using the
-<a href="https://ccpbiosim.github.io/workshop/events/leeds2019/server.html" target="_blank">workshop Jupyter server</a>.
+<a href="https://notebook.biosimspace.org" target="_blank">workshop Jupyter server</a>.
 
 Once you have started the server, navigate to the `python_and_data` directory
 and you will find all workshop material there.
@@ -28,7 +28,7 @@ The workshops are numbered sequentially from `01_jupyter_howto.ipynb` to
 and are *mostly* independent. Feel free to go through them in the order you
 prefer, and to skip topics that you feel you are already comfortable with.
 
-There are exercises in many of the topics. You can find answers in the 
+There are exercises in many of the topics. You can find answers in the
 equivalent notebook in the `answers` directory.
 
 Below is a summary of each topic, together with links to view html versions
@@ -131,7 +131,7 @@ Learn how to use the pandas with the MatPlotLib library to draw graphs
 
 ### [16_viewing_molecules.ipynb](html/16_viewing_molecules.html) ([answers](html/answers/16_viewing_molecules.html))
 
-Learn how to use the nglview and BioSimSpace libraries to create 3D 
+Learn how to use the nglview and BioSimSpace libraries to create 3D
 views of molecules.
 
 [download](16_viewing_molecules.ipynb) | [download answers](answers/16_viewing_molecules.ipynb)
